@@ -1,28 +1,3 @@
-/* Loading JS */
-
-let i = 0;
-let loading__title = document.querySelector('.loading__title');
-let aqua = document.querySelector('.aqua');
-let loading = document.querySelector('.loading');
-let number = document.querySelector('.number');
-let percentBar = document.querySelector('.percentBar');
-
-let interval = setInterval(function(){
-    number.innerHTML = i+ '<span>%</span>';
-    percentBar.style.width = i+'%';
-    i++
-    if(i == 101){
-        clearInterval(interval);
-        setTimeout(function() {
-         aqua.style.opacity = '0';
-         aqua.style.visibility = 'hidden';
-         loading.style.background = '#03a9f4';
-         loading__title.style.opacity = '1';
-         loading__title.style.visibility = 'visible';
-        })
-    }
-}, 100)
-
 /* Sliders JS */
 
 let items = document.querySelectorAll('.slider .list .item');
