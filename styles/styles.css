@@ -27,7 +27,7 @@ html {
 
 body {
     font-family: 'General Sans', sans-serif;
-    background-color: transparent;
+    background-color: var(--clr-dark);
     color: var(--clr-light);
 }
 
